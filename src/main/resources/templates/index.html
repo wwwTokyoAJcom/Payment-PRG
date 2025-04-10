@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>결제 폼</title>
+</head>
+<body>
+    <h2>💳 결제 요청</h2>
+    <form th:action="@{/pay}" method="post">
+        <label>주문번호: <input type="text" name="orderId" required></label><br><br>
+        <label>결제 금액: <input type="number" name="amount" required></label><br><br>
+        <button type="submit">결제하기</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>결제 실패</title>
+</head>
+<body>
+    <h2>❌ 결제 실패</h2>
+    <div th:if="${errorMessage}" style="color:red;" th:text="${errorMessage}"></div>
+    <br>
+    <a href="/">홈으로</a>
+</body>
+</html>
